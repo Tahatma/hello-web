@@ -13,3 +13,19 @@ p {
     color: #333;
     font-size: 18px;
 }
+/* Animation for the title */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #0078d7;
+    animation: slideDown 2s ease-out;
+}
